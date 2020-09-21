@@ -1,0 +1,12 @@
+<launch>
+	<node pkg = "arm_vo"
+		  type = "ARM_VO"
+		  name = "ARM_VO"
+		  output = "screen">
+    </node>
+
+    <!-- Camera calibration file -->
+    <param name="calFile" value="$(find vo)/params/GT.yaml" type="str" />
+
+
+</launch>

@@ -1,0 +1,55 @@
+%YAML:1.0
+
+#########################
+### Camera Parameters ###
+#########################
+
+fx: 364.84
+fy: 363.79
+cx: 296.50
+cy: 225.06
+
+height: 0.19
+pitch_angle: -0.25
+
+k1: -0.320273
+k2: 0.09975
+p1: 2.5325e-05
+p2: -0.00089
+
+###########################
+### Detector Parameters ###
+###########################
+
+# Maximum number of FAST features per image
+nFeatures: 300
+
+#Keypoints with corner response lower than threshold are ignored (lower it if your images have low contrast)
+threshold: 20
+
+# Image is divided to a nRows * nCols grid
+nRows: 6
+nCols: 6
+
+##########################
+###  GRIC Parameters   ###
+##########################
+
+# GRIC
+sigma: 0.8
+
+##########################
+### Tracker Parameters ###
+##########################
+
+window_size: 13
+
+
+##########################
+###    Video Params    ###
+##########################
+frameWidth: 640
+frameHeight: 480
+outputVideo: 1
+fps: 20
+drawGroundTruth: 0
